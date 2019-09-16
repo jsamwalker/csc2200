@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hardware Inventory Form</title>
+  </head>
+  <style type="text/css">
+    table {
+        border-collapse: collapse;
+        width: 400px;
+  }
+
+      table, th, td {
+      border: 2px solid black;
+  }
+      th {
+      font-size: 15pt;
+      background-color: #A8F69B;
+      height: 50px;
+  }
+      tr {
+      background-color: #d9e9ff;
+  }
+      td {
+        height: 30px;
+      }
+
+  </style>
+  <body>
+    <h1> <div style="width:500px; background-color: yellow">
+    Happy Harry's Hardware Inventory
+    </div></h1>
+    <form action="http://45.55.136.114/~dlash/hw/handleInventory.php
+" method="post">
+    <table>
+      <th> Inventory Control Form </th>
+      <tr>
+        <td> Select an Item:
+        <input type="radio" name="item" value="hammer"> Hammer
+        <input type="radio" name="item" value="wrench"> Wrench
+        </td>
+      </tr>
+      <tr>
+        <td> How many did you sell?
+        <select name="count" size="1">
+          <option value="1"> 1 </option>
+          <option value="2"> 2 </option>
+          <option value="3"> 3</option>
+          <option value="4"> 4 </option>
+          <option value="5"> 5 </option>
+        </select>
+        </td>
+      </tr>
+      <tr>
+        <td> What is yur associate employee ID?
+          <select name="employee" size="1">
+            <option value="101"> 101 </option>
+            <option value="201"> 201 </option>
+            <option value="301"> 301 </option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td> What is the password?
+          <input type="password" name="pass" value="" size="15">
+        </td>
+      </tr>
+      <tr>
+        <td> Enter a valid email address.
+          <input type="email" name="email">
+        </td>
+      </tr>
+      <tr>
+        <td> Check ALL that apply - Item for this iem:
+          <ol>
+            <li>
+              It is in its original packaging: <input type="checkbox" name="originalPackage" value="Y">
+            </li>
+            <li>
+              It is on the shelf: <input type="checkbox" name="onShelf" value="Y">
+            </li>
+            <li>
+              It was returned by a customer: <input type="checkbox" name="customerReturned" value="Y">
+            </li>
+          </ol>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="submit" name="submit" value="submit it">
+        </td>
+      </tr>
+
+    </table>
+    </form>
+  </body>
+<br>
+<br>
+<br>
+  <footer>
+    <div style="width:500px; background-color: teal; font-size: 15px">
+    <b>Thank you for filling out our form.</b>
+    </div>
+  </footer>
+</html>
